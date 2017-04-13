@@ -1,10 +1,9 @@
-package main
+package math
+func Average(xs []float64) float64 {
+total := float64(0)
+for _, x:= range xs{
 
-import "fmt"
-import "golang-book/chapter11/math"
-
-func main() {
-  xs := []float64{1,2,3,4}
-  avg := math.Average(xs)
-  fmt.Println(avg)
+total += x
+}
+return total/float64(len(xs))
 }
